@@ -199,9 +199,9 @@ public class Fraction extends Number implements Cloneable {
      *
      * @return the value of this fraction as an {@code int}
      */
-    public int intValue() {
-        // TODO (EOJBE5)
-        return 0;
+    public int intValue()
+    {
+        return (int)doubleValue();
     }
 
     /**
@@ -210,8 +210,7 @@ public class Fraction extends Number implements Cloneable {
      * @return the value of this fraction as a {@code double}
      */
     public double doubleValue() {
-        // TODO (T3Z4AP)
-        return 0;
+        return (double)numerator / (double)denominator;
     }
 
     /**
