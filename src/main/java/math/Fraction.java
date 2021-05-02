@@ -91,8 +91,7 @@ public class Fraction extends Number implements Cloneable {
      * @return a fraction that represents the result
      */
     public Fraction subtract(int n) {
-        // TODO (TO0G2M)
-        return null;
+        return this(this.getNumerator() - n, 1)
     }
 
     /**
