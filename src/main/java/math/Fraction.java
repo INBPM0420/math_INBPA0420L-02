@@ -1,5 +1,7 @@
 package math;
 
+import java.util.function.Function;
+
 /**
  * Class for representing fractions that are not reduced automatically.
  */
@@ -91,7 +93,8 @@ public class Fraction extends Number implements Cloneable {
      * @return a fraction that represents the result
      */
     public Fraction subtract(int n) {
-        return this(this.getNumerator() - n, 1)
+        double result = ((this.numerator /( this.denominator * 1.0)) - n) * this.denominator;
+        return new Fraction((int) result, this.denominator);
     }
 
     /**
