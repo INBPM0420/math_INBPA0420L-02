@@ -180,8 +180,9 @@ public class Fraction extends Number implements Cloneable {
      * @return a fraction that represents the reciprocal of this fraction
      */
     public Fraction reciprocal() {
-        // TODO (V8PO16)
-        return null;
+    	//(V8PO16)
+        
+        return new Fraction(this.denominator,this.numerator);
     }
 
     /**
